@@ -1,64 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interstellar | Home</title>
+    <link rel="shortcut icon" href="interstellar_favicon.png" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        html,
+        body,
+        .content {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            font-family: "Poppins";
+        }
+
+
+        .content {}
+
+        .intro {
+            margin: 40px;
+        }
+
+        .intro-header {
+            font-size: clamp(25px, 7vw, 3rem);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .intro-para {
+            font-size: clamp(1rem, 1vw, 3rem);
+            line-height: 1;
+        }
+
         @keyframes auto-scroll {
             0% {
                 transform: translateY(0);
             }
+
             5% {
                 transform: translateY(0);
             }
+
             10% {
-                transform: translateY(-1.1625em);
+                transform: translateY(calc(-1em - 1px));
+                /* -1px for top showing bottom of above line */
             }
+
             30% {
-                transform: translateY(-1.1625em);
+                transform: translateY(calc(-1em - 1px));
             }
+
             35% {
-                transform: translateY(-2.325em);
+                transform: translateY(calc(-2em - 1px));
             }
+
             55% {
-                transform: translateY(-2.325em);
+                transform: translateY(calc(-2em - 1px));
             }
+
             60% {
-                transform: translateY(-3.4875em);
+                transform: translateY(calc(-3em - 1px));
             }
+
             80% {
-                transform: translateY(-3.4875em);
+                transform: translateY(calc(-3em - 1px));
             }
+
             85% {
-                transform: translateY(-4.65em);
+                transform: translateY(calc(-4em - 1px));
             }
+
             100% {
-                transform: translateY(-4.65em);
+                transform: translateY(calc(-4em - 1px));
             }
         }
-        div#names {
-            border: solid black 1px;
-            height: 50px;
-            font-size: 50px;
-            /* overflow: hidden; */
-            display: flex;
+
+        #names {
+            /* border: solid black 1px; */
+            height: 1em;
+            overflow: hidden;
+            display: inline-flex;
             flex-direction: column;
+            /* padding: 0px 10px 10px; */
+            transform: translateY(1px);
         }
-        div#names span {
-            animation: auto-scroll 10s infinite;
-            transform: translateY(-4.65em);
+
+        #names span {
+            animation: auto-scroll 5s infinite;
+            /* transform: translateY(-4.65em); */
         }
+
+        @keyframes shift-for-auto-scroll {
+            0% {
+                transform: translateX(-4.1em);
+            }
+
+            5% {
+                transform: translateX(-4.1em);
+            }
+
+            10% {
+                transform: translateX(-3.5em);
+            }
+
+            30% {
+                transform: translateX(-3.5em);
+            }
+
+            35% {
+                transform: translateX(-4.7em);
+            }
+
+            55% {
+                transform: translateX(-4.7em);
+            }
+
+            60% {
+                transform: translateX(0em);
+            }
+
+            80% {
+                transform: translateX(0em);
+            }
+
+            85% {
+                transform: translateX(-4.1em);
+            }
+
+            100% {
+                transform: translateX(-4.1em);
+            }
+        }
+
+        #ex {
+            animation: shift-for-auto-scroll 5s infinite;
+            position: absolute;
+        }
+
+        a {
+            color: rgb(48, 155, 27);
+        }
+
     </style>
 </head>
+
 <body>
     <nav id="nav"></nav>
-    <div id="names">
-        <span>Interstellar</span>
-        <span>QuasarAGN</span>
-        <span>Δiastrikos</span>
-        <span>Lodestar</span>
-        <span>Interstellar</span>
+
+    <div class="content">
+        <div class="intro">
+            <div class="intro-header">
+                Hi, I'm
+                <div id="names">
+                    <span>Interstellar</span>
+                    <span>QuasarAGN</span>
+                    <span><span style="font-family: Calibri;">Δ</span>iastrikos</span>
+                    <span>NimbusShadow314</span>
+                    <span>Interstellar</span>
+                </div><span id="ex">!</span>
+            </div>
+            <div class="intro-para">
+                I probably have too many online names lol <br><br>
+                Welcome to my website! Here you'll find basically any projects that I've programmed; some are kinda
+                random, but hey, maybe you'll think they're cool too.
+                <br>
+                <br>
+                Other than that, I have a YouTube channel! My life has been busy as of late so I haven't posted any
+                videos, <i>buuut</i> if I get to 50 subscribers I'll force myself to start :]
+                <br>
+                <br>
+                I play 
+                <ul>
+                    <li>Minecraft, where I am <b>NimbusShadow314</b>, </li>
+                    <li>Pokémon <a href="/radical-red.html">Radical Red</a>, <a href="/unbound.html">Unbound</a>, and <a href="/emerald-imperium">Emerald Imperium</a>, </li>
+                    <li>bonk.io and hitbox.io, where I am <b>QuasarAGN</b>, </li>
+                    <li>and more!</li>
+                </ul>
+            </div>
+        </div>
     </div>
+
 </body>
+
 </html>
