@@ -1,1 +1,62 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar | Home</title>
+    <style>
+        @keyframes auto-scroll {
+            0% {
+                transform: translateY(0);
+            }
+            5% {
+                transform: translateY(0);
+            }
+            10% {
+                transform: translateY(-1em);
+            }
+            30% {
+                transform: translateY(-1em);
+            }
+            35% {
+                transform: translateY(-2em);
+            }
+            55% {
+                transform: translateY(-2em);
+            }
+            60% {
+                transform: translateY(-3em);
+            }
+            80% {
+                transform: translateY(-3em);
+            }
+            85% {
+                transform: translateY(-4em);
+            }
+            100% {
+                transform: translateY(-4em);
+            }
+        }
+        div#names {
+            border: solid white 1px;
+            height: 1em;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        div#names span {
+            animation: auto-scroll 10s infinite;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav"></nav>
+    <div id="names">
+        <span>Interstellar</span>
+        <span>QuasarAGN</span>
+        <span>Δiastrikos</span>
+        <span>Lodestar</span>
+        <span>Interstellar</span>
+    </div>
+</body>
+</html>
