@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interstellar | Play Pokémon Radical Red</title>
+    <title>Interstellar | Play Pokémon Unbound</title>
     <link rel="shortcut icon" href="interstellar_favicon.png" type="image/x-icon">
     <style>
         html,
@@ -15,16 +15,30 @@
             margin: 0;
             overflow: hidden;
         }
+
+        #home img {
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            filter: invert(1);
+            background-color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
     </style>
 
 </head>
 
 <body>
+    <div id="home"><a href="/"><img src="https://www.svgrepo.com/show/22031/home-icon-silhouette.svg"></a></div>
     <iframe src="https://www.retrogames.cc/embed/44803-pokemon-unbound-v2-1-1-1.html" frameborder="0"></iframe>
 </body>
 
 <script>
-
+    window.addEventListener('beforeunload', (e) => {
+        e.preventDefault();
+    })
 </script>
 
 </html>
