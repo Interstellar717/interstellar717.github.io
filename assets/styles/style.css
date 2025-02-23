@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    html {
+        filter: invert(1);
+        background-color: white;
+    }
+}
+
+* {
+    width: fit-content;
+}
+
+html,
+body,
+.content {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.content {
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    padding: 30px 0 0 30px;
+}
+
+@keyframes auto-scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(calc(-1em - 1px));
+        /* -1px for top showing bottom of above line */
+    }
+
+    30% {
+        transform: translateY(calc(-1em - 1px));
+    }
+
+    35% {
+        transform: translateY(calc(-2em - 1px));
+    }
+
+    55% {
+        transform: translateY(calc(-2em - 1px));
+    }
+
+    60% {
+        transform: translateY(calc(-3em - 1px));
+    }
+
+    80% {
+        transform: translateY(calc(-3em - 1px));
+    }
+
+    85% {
+        transform: translateY(calc(-4em - 1px));
+    }
+
+    100% {
+        transform: translateY(calc(-4em - 1px));
+    }
+}
+
+@keyframes shift-for-auto-scroll {
+    0% {
+        transform: translateX(-4.1em);
+    }
+
+    5% {
+        transform: translateX(-4.1em);
+    }
+
+    10% {
+        transform: translateX(-3.5em);
+    }
+
+    30% {
+        transform: translateX(-3.5em);
+    }
+
+    35% {
+        transform: translateX(-4.7em);
+    }
+
+    55% {
+        transform: translateX(-4.7em);
+    }
+
+    60% {
+        transform: translateX(0em);
+    }
+
+    80% {
+        transform: translateX(0em);
+    }
+
+    85% {
+        transform: translateX(-4.1em);
+    }
+
+    100% {
+        transform: translateX(-4.1em);
+    }
+}
+
+a {
+    color: rgb(48, 155, 27);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.para {
+    width: clamp(300px, 80%, 800px);
+}
+
+.banner {
+    width: 100%;
+}
+
+.sidebar-bkg {
+    background-color: #EEFFCC;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: clamp(100px, 370px, 25%);
+    z-index: -1;
+}
+
+.side-frame {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    width: clamp(100px, 370px, 25%);
+    height: calc(100% - 308px);
+    animation: scroll-height;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-height {
+    from {
+        height: calc(100% - 308px);
+    }
+
+    to {
+        height: 100%;
+    }
+
+}
+
+.content.cubing {
+    width: calc(100% - 30px - clamp(100px, 370px, 25%));
+    border-top-right-radius: 5vw;
+    background-color: white;
+}
