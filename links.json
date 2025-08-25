@@ -1,0 +1,29 @@
+[
+    {
+        "links": [
+            {
+                "title": "Pokemon ROMs",
+                "image": "/assets/img/radical-red.png",
+                "obj": "-14px",
+                "url": "/pokemon/"
+            },
+            {
+                "title": "custom.html",
+                "image": "/assets/img/custom.html.png",
+                "url": "https://interstellar717.github.io/custom.html",
+                "target": "_blank"
+            },
+            {
+                "title": "Language Practice",
+                "image": "/assets/img/spanish-thumbnail.png",
+                "fit": "contain",
+                "url": "/language/"
+            },
+            {
+                "title": "Full Page Catalog",
+                "image": "",
+                "url": "/page-catalog/"
+            }
+        ]
+    }
+]
