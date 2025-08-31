@@ -6,18 +6,18 @@
                 "title": "Radical Red 4.1",
                 "image": "/assets/img/radical-red.png",
                 "obj": "-14px",
-                "url": "https://interstellar717.github.io/radical-red"
+                "url": "/pokemon/radical-red/"
             },
             {
                 "title": "Unbound",
                 "image": "/assets/img/unbound.png",
-                "url": ""
+                "url": "/pokemon/unbound/"
             },
             {
                 "title": "Emerald Imperium",
                 "image": "/assets/img/emerald-imperium.png",
                 "obj": "0 0",
-                "url": "https://interstellar717.github.io/emerald-imperium"
+                "url": "/pokemon/emerald-imperium/"
             }
         ]
     },
@@ -27,7 +27,7 @@
             {
                 "title": "Random Pokemon",
                 "image": "/assets/img/random-pokemon-new.png",
-                "url": "https://interstellar717.github.io/random-pokemon"
+                "url": "/random-pokemon/"
             },
             {
                 "title": "Spanish Practice",
@@ -47,7 +47,7 @@
                 "img-style": {
                     "background": "black"
                 },
-                "url": "/games/tetris"
+                "url": "/games/tetris/"
             },
             {
                 "title": "Schoology Grades Manager",
@@ -59,4 +59,5 @@
             }
         ]
     }
+
 ]
