@@ -1,63 +1,12 @@
 [
     {
-        "header": "Frames",
         "links": [
             {
-                "title": "Radical Red 4.1",
-                "image": "/assets/img/radical-red.png",
-                "obj": "-14px",
-                "url": "/pokemon/radical-red/"
-            },
-            {
-                "title": "Unbound",
-                "image": "/assets/img/unbound.png",
-                "url": "/pokemon/unbound/"
-            },
-            {
-                "title": "Emerald Imperium",
-                "image": "/assets/img/emerald-imperium.png",
-                "obj": "0 0",
-                "url": "/pokemon/emerald-imperium/"
-            }
-        ]
-    },
-    {
-        "header": "My Projects",
-        "links": [
-            {
-                "title": "Random Pokemon",
-                "image": "/assets/img/random-pokemon.png",
-                "url": "/random-pokemon/"
-            },
-            {
-                "title": "Spanish Practice",
+                "title": "Spanish Verbs",
                 "image": "/assets/img/spanish-thumbnail.png",
                 "fit": "contain",
-                "url": "/language/spanish/"
-            },
-            {
-                "title": "Uno vs AI",
-                "image": "/assets/img/uno.png",
-                "url": "/games/uno/"
-            },
-            {
-                "title": "Tetris (kinda broken)",
-                "image": "/assets/img/tetris.png",
-                "fit": "contain",
-                "img-style": {
-                    "background": "black"
-                },
-                "url": "/games/tetris"
-            },
-            {
-                "title": "Schoology Grades Manager",
-                "image": "/assets/img/grades-manager.png",
-                "obj": "0 0",
-                "fit": "none",
-                "url": "https://github.com/Interstellar717/schoology-grades-manager",
-                "target": "_blank"
+                "url": "/spanish/"
             }
         ]
     }
-
 ]
