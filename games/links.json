@@ -1,0 +1,16 @@
+[
+    {
+        "links": [
+            {
+                "title": "Uno",
+                "image": "",
+                "url": "/games/uno"
+            },
+            {
+                "title": "Tetris",
+                "image": "",
+                "url": "/games/tetris"
+            }
+        ]
+    }
+]
