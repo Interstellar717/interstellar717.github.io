@@ -5,25 +5,24 @@
                 "title": "Radical Red 4.1",
                 "image": "/assets/img/radical-red.png",
                 "obj": "-14px",
-                "url": "radical-red/"
+                "url": "https://interstellar717.github.io/pokemon/radical-red"
             },
             {
                 "title": "Unbound",
                 "image": "/assets/img/unbound.png",
-                "url": "unbound/"
-            },
-            {
-                "title": "Random Pokemon",
-                "image": "/assets/img/random-pokemon.png",
-                "url": "/random-pokemon/"
+                "url": "https://interstellar717.github.io/pokemon/unbound"
             },
             {
                 "title": "Emerald Imperium",
                 "image": "/assets/img/emerald-imperium.png",
                 "obj": "0 0",
-                "url": "emerald-imperium/"
+                "url": "https://interstellar717.github.io/pokemon/emerald-imperium"
+            },
+            {
+                "title": "Random Pokemon",
+                "image": "/assets/img/random-pokemon-new.png",
+                "url": "https://interstellar717.github.io/random-pokemon"
             }
         ]
     }
-
 ]
