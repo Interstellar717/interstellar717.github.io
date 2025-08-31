@@ -3,14 +3,19 @@
         "links": [
             {
                 "title": "Uno",
-                "image": "",
+                "image": "/assets/img/uno.png",
                 "url": "/games/uno"
             },
             {
                 "title": "Tetris",
-                "image": "",
+                "image": "/assets/img/tetris.png",
+                "fit": "contain",
+                "img-style": {
+                    "background": "black"
+                },
                 "url": "/games/tetris"
             }
         ]
     }
+
 ]
