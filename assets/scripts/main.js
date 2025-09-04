@@ -97,6 +97,7 @@ getJSON("links.json").then(d => data = d).then(e => {
 const isChromeOS = navigator.userAgent.includes("CrOS");
 
 if (isChromeOS && self === top) {
-    alert("Chromebook detected. Framing...");
+    // alert("Chromebook detected. Framing...");
     window.open("https://interstellar717.github.io/custom.html/?url=" + window.location.href);
+
 }
