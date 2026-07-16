@@ -36,10 +36,10 @@
                 "target": "_blank"
             },
             {
-                "title": "Spanish Practice",
-                "image": "/assets/img/spanish-thumbnail.png",
-                "fit": "contain",
-                "url": "/language/spanish/"
+                "title": "Silksong Boss Challenges.html",
+                "image": "",
+                "url": "/silksong-challenges/",
+                "target": "_blank"
             },
             {
                 "title": "Uno vs AI",
@@ -54,6 +54,12 @@
                     "background": "black"
                 },
                 "url": "/games/tetris/"
+            },
+            {
+                "title": "Spanish Practice",
+                "image": "/assets/img/spanish-thumbnail.png",
+                "fit": "contain",
+                "url": "/language/spanish/"
             },
             {
                 "title": "Schoology Grades Manager",
