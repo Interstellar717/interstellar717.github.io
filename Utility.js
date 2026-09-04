@@ -37,8 +37,8 @@ class Utility {
 		if (q.split("|").length > 1 && q.split("|").length < 3 || q.split("|").length > 3)
 			throw new Error("Invalid query sequence (styling must be within ||)");
 
-		const attributes = q.split("[").length > 1 && q.split("]").length > 1 ? Object.assign({}, ...q.split("[")[1].split("]")[0].split(",").map(e => ({ [removePadding(e.split("=")[0])]: removePadding(e.split("=")[1]) }))) : [];
-		const style = q.split("|").length > 1 ? Object.assign({}, ...q.split("|")[1].split("|")[2].split(";").map(e => ({ [removePadding(e.split(":")[0])]: removePadding(e.split(":")[1]) }))) : [];
+		const attributes = q.split("[").length > 1 && q.split("]").length > 1 ? Object.assign({}, ...q.split("[")[1].split("]")[0].split(",").map(e => ({ [Utility.removePadding(e.split("=")[0])]: Utility.removePadding(e.split("=")[1]) }))) : [];
+		const style = q.split("|").length > 1 ? Object.assign({}, ...q.split("|")[1].split("|")[2].split(";").map(e => ({ [Utility.removePadding(e.split(":")[0])]: Utility.removePadding(e.split(":")[1]) }))) : [];
 
 		// console.log(tag);
 		// console.log(id);
