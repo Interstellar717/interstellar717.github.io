@@ -60,7 +60,7 @@ class Utility {
 		const { id, classList, textContent, style, attributes } = data;
 
 		const result = document.createElement(tag);
-		textContent.toString() && (result.textContent = textContent);
+		textContent?.toString() && (result.textContent = textContent);
 		classList?.length && classList.forEach(e => result.classList.add(e));
 		id && (result.id = id);
 		attributes && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
