@@ -45,7 +45,7 @@ class Utility {
 		// console.log(className);
 		// console.log(attributes);
 
-		const result = document.createElement("tag");
+		const result = document.createElement(tag);
 		className.length && className.forEach(e => result.classList.add(e));
 		id && (result.id = id);
 		attributes.length && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
