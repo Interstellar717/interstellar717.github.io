@@ -26,7 +26,7 @@ class Utility {
 		return temp;
 	}
 
-	static crel(q) {
+	static crel(q, textContent = "") {
 		const tag = q.split(".")[0].split("#")[0].split("[")[0];
 		const id = q.split("#").length > 1 ? q.split("#")[1].split(".")[0].split("[")[0] : "";
 		const className = q.split(".").length > 1 ? [...q.split(".").slice(1, -1), q.split(".")[q.split(".").length - 1].split("#")[0].split("[")[0]] : "";
@@ -46,6 +46,7 @@ class Utility {
 		// console.log(attributes);
 
 		const result = document.createElement(tag);
+		result.textContent = textContent;
 		className.length && className.forEach(e => result.classList.add(e));
 		id && (result.id = id);
 		attributes.length && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
