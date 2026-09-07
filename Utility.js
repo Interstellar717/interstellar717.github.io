@@ -26,7 +26,7 @@ class Utility {
 		return temp;
 	}
 
-	static crel(q, textContent = "") {
+	static crelOld(q, textContent = "") {
 		const tag = q.split(".")[0].split("#")[0].split("[")[0];
 		const id = q.split("#").length > 1 ? q.split("#")[1].split(".")[0].split("[")[0] : "";
 		const className = q.split(".").length > 1 ? [...q.split(".").slice(1, -1), q.split(".")[q.split(".").length - 1].split("#")[0].split("[")[0]] : "";
@@ -51,6 +51,20 @@ class Utility {
 		id && (result.id = id);
 		attributes.length && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
 		style.length && Object.keys(style).forEach(e => result.style.setProperty(e, style[e]));
+
+		return result;
+	}
+
+	static crel(tagName = "div", data = {}) {
+		const tag = tagName;
+		const { id, class, textContent, style, attributes } = data;
+
+		const result = document.createElement(tag);
+		result.textContent = textContent;
+		class.length && class.forEach(e => result.classList.add(e));
+		id && (result.id = id);
+		attributes.length && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
+		style.length && style.split(";").forEach(e => result.style.setProperty(e.split(":")[0], e.split(":")[1]));
 
 		return result;
 	}
