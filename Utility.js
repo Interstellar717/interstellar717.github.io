@@ -63,7 +63,7 @@ class Utility {
 		textContent && (result.textContent = textContent);
 		classList?.length && classList.forEach(e => result.classList.add(e));
 		id && (result.id = id);
-		attributes?.length && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
+		attributes && Object.keys(attributes).forEach(e => result.setAttribute(e, attributes[e]));
 		style?.length && style.split(";").forEach(e => result.style.setProperty(e.split(":")[0], e.split(":")[1]));
 
 		return result;
